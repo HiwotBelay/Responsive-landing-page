@@ -1,0 +1,74 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fixed navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for menu items */
+nav ul li a:hover {
+    background-color: #555;
+    color: yellow;
+}
+
+/* Sections style */
+section {
+    padding: 100px;
+    text-align: center;
+}
+
+#home {
+    background-color: lightblue;
+    height: 100vh;
+}
+
+#about {
+    background-color: lightcoral;
+    height: 100vh;
+}
+
+#services {
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+#contact {
+    background-color: lightgray;
+    height: 100vh;
+}
+
+/* Scroll change */
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s;
+}
